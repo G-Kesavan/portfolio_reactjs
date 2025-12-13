@@ -18,7 +18,7 @@ function App() {
   }
   return (
     <div className="app">
-      {/* <Background/> */}
+      <Background/>
       <Header
         topRef={topRef}
         heading={heading}
