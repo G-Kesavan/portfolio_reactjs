@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import './Contact.css'
-import {db} from '../../.././API/ContactAPI.jsx'
+import {db} from '../../API/ContactAPI.jsx'
 import { collection,addDoc } from 'firebase/firestore'
 import { IoLogoWhatsapp,IoLocation,IoCopyOutline} from "react-icons/io5";
 import { FaPhone} from "react-icons/fa6";
@@ -22,7 +22,7 @@ const Contact = () => {
       await addDoc(collection(db,"contacts"),{
       name,
       email,
-      message,
+      message,  
     });
 
     alert('message has been submitted');
